@@ -44,7 +44,7 @@ public class ObjectPoolManager : MonoBehaviour
         
         if (dontDestroyOnLoad == true)
         {
-           dontDestroyOnLoad = true;
+           DontDestroyOnLoad(gameObject);
         }
     }
 
