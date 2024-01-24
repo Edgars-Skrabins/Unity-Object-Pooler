@@ -7,7 +7,7 @@ public class ObjectPoolManager : MonoBehaviour
     public static ObjectPoolManager I; 
 
     [Tooltip("If true then this script wont be destroyed on load")]
-    [SerializeField] private bool dontDestroyOnLoad; // If true then this script wont be destroyed on load
+    [SerializeField] private bool dontDestroyOnLoad; 
 
     [Serializable]
     public class ObjectPool
@@ -41,7 +41,6 @@ public class ObjectPoolManager : MonoBehaviour
         }
 
 #endregion
-        
         if (dontDestroyOnLoad == true)
         {
            DontDestroyOnLoad(gameObject);
